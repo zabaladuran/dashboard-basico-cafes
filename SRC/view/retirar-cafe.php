@@ -5,6 +5,9 @@ include __DIR__ . '/../model/basedatos.php';
 $mensaje = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
     $id = intval($_POST['id']);
+    // Eliminar ventas asociadas
+    $conn->query("DELETE FROM ventas WHERE cafe_id=$id");
+    // Ahora eliminar el café
     $stmt = $conn->prepare("DELETE FROM cafes WHERE id=?");
     $stmt->bind_param("i", $id);
     if ($stmt->execute()) {
