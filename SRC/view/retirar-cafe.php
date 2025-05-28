@@ -26,17 +26,18 @@ $cafes = $conn->query("SELECT id, nombre, precio, descripcion FROM cafes");
 <body>
 <?php include __DIR__ . '/../includes/barra-nav.php'; ?>
 
-<?php if ($mensaje): ?>
-  <div style="background:#dff0d8; color:#3c763d; padding:10px 20px; margin:20px; border-radius:5px; text-align:center; font-weight:bold;">
-    <?php echo $mensaje; ?>
-  </div>
-<?php endif; ?>
-
 <div class="main tienda-cafe">
   <div class="topbar">
     <h1 class="titulo-top">Retirar Café</h1>
     <div class="close-icon">✖</div>
   </div>
+
+  <?php if ($mensaje): ?>
+    <div style="background:#dff0d8; color:#3c763d; padding:10px 20px; margin:20px; border-radius:5px; text-align:center; font-weight:bold;">
+      <?php echo $mensaje; ?>
+    </div>
+  <?php endif; ?>
+
   <header>
     <h2 class="titulo-seccion">Listado de Cafés</h2>
   </header>

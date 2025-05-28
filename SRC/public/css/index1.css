@@ -14,15 +14,20 @@ body {
 
 /* SIDEBAR IZQUIERDO */
 .sidebar-fixed {
+  border-top: 4px solid rgb(75, 40, 11); /* Solo borde arriba */
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
   width: 220px;
+  border-radius: 0 25px 0 0;
   background-color: #6f4e37; /* Marrón café */
   color: #fffbe7;
   padding: 20px;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: 0;   
   left: 0;
-  box-shadow: 2px 0 10px rgba(111, 78, 55, 0.1);
+  box-shadow: 4px 0 24px 0 rgba(111, 78, 55, 0.25); /* sombra lateral */
 }
 
 .sidebar-fixed .logo {
@@ -180,7 +185,6 @@ header {
   font-size: 16px;
   margin-bottom: 5px;
   color: #6f4e37;
-}
 
 .precio-cafe {
   font-weight: bold;
@@ -188,12 +192,9 @@ header {
   font-size: 15px;
 }
 
-/* Footer alineado con el contenido principal */
 footer {
-  margin-left: 220px; /* igual al ancho de la sidebar */
-  background: #6f4e37;
-  color: #fffbe7;
-  text-align: center;
-  padding: 16px 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  left: 220px;
+  bottom: 0;
+  z-index: 100;
 }

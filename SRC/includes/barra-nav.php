@@ -4,6 +4,7 @@
     <ul>
       <li><a href="/SRC/view/index.php" class="nav-link">Home</a></li>
       <li><a href="/SRC/view/nuevo-cafe.php" class="nav-link">Nuevo</a></li>
+      <li><a href="/SRC/view/ventas.php" class="nav-link">Ventas</a></li>
       <li><a href="/SRC/view/retirar-cafe.php" class="nav-link">Retirados</a></li>
       <li><a href="/SRC/view/clientes.php" class="nav-link">Clientes</a></li>
     </ul>
